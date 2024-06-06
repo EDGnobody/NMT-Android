@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.NMT.MainActivity">
+
+    <EditText
+        android:id="@+id/editForm1"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Input"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/TranslateBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Translate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editForm1" />
+
+    <TextView
+        android:id="@+id/viewForm1"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Output"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TranslateBtn1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
